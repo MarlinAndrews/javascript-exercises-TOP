@@ -2,11 +2,10 @@ const sumAll = function(startNumber, endNumber) {
     
 
     // check for non-number parameters
-
+    if (!Number.isInteger(startNumber) || !Number.isInteger(endNumber)) return "ERROR";
     // Check for negative numbers
-    if (startNumber < 0 || endNumber < 0) {
-        return 'ERROR';   
-    } 
+    if (startNumber < 0 || endNumber < 0) return 'ERROR';   
+    
     
 
     //determine smallNumber and largeNumber
